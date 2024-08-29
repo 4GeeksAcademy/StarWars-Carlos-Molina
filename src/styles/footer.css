@@ -1,7 +1,3 @@
-.row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-.body{
+.footer{
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 43));
 }

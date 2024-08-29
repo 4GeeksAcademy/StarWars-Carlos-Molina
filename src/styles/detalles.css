@@ -1,7 +1,6 @@
-.row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
 .body{
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 43));
+}
+.card{
+    background-color: black;
 }

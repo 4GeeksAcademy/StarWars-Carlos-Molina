@@ -1,0 +1,17 @@
+.navbar{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 0, 43));
+}
+
+.tituloWiki {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 187, 0);
+}
+
+.contador{
+    background-color: rgba(240, 204, 0, 0);
+}
+
+.eliminarFavorito{
+    display: flex;
+    justify-content: end;
+}
