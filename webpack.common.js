@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        favicon: '4geeks.ico',
+        favicon: '/workspaces/StarWars-Carlos-Molina/Stormtrooper-icon_34494.ico',
         template: 'template.html'
     }),
     new Dotenv({ safe: true, systemvars: true })

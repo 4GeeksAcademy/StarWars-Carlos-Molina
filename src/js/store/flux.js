@@ -96,20 +96,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 
             addFavorites: (id, type, name, title) => {
                 const { listaDeFavoritos } = getStore();
-                console.log(listaDeFavoritos)
                 if (listaDeFavoritos.length == 0) {
                     const newFavorites = [...listaDeFavoritos, { id, type, name, title }];
                     setStore({ listaDeFavoritos: newFavorites });
                     return 
                 }
                 const exist = listaDeFavoritos.find(
-                    (favorito) => {
-                       
-                     console.log(favorito.id, id, favorito.type, type)
-
+                    (favorito) => {            
                        return favorito.id == id && favorito.type == type}
                 )
-                 console.log(exist)
 
                 if (exist) {
                     const newFavorites = listaDeFavoritos.filter((favorito) => {
@@ -122,20 +117,6 @@ const getState = ({ getStore, getActions, setStore }) => {
                     const newFavorites = [...listaDeFavoritos, { id, type, name, title }];
                     setStore({ listaDeFavoritos: newFavorites });
                 }
-
-
-                // const foundIndex = listaDeFavoritos.findIndex(
-                //     (element) => element.id === id && element.type === type
-                // );
-                // if (foundIndex !== -1) {
-                //     const newFavorites = listaDeFavoritos.filter(
-                //         (element, index) => index !== foundIndex
-                //     );
-                //     setStore({ listaDeFavoritos: newFavorites });
-                // } else {
-                //     const newFavorites = [...listaDeFavoritos, { id, type, name, title }];
-                //     setStore({ listaDeFavoritos: newFavorites });
-                // }
             },
 
             isInFavorites: (id, type) => {
